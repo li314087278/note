@@ -62,9 +62,6 @@ docker可视化管理
 
 $ docker pull docker.io/portainer/portainer
 
-~~~
-
-~~~
 
 $ docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock --name portainer portainer/portainer
 
@@ -75,7 +72,6 @@ $ docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/d
 ~~~
 
 $ docker pull centos:7
-
 
 
 $ docker run --privileged -d -p 7722:22 -p 7780:80 --name=centos7 centos:7 /usr/sbin/init
