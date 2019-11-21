@@ -76,12 +76,7 @@ $ docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/d
 
 $ docker pull centos:7
 
-~~~
 
-
-运行
-
-~~~
 
 $ docker run --privileged -d -p 7722:22 -p 7780:80 --name=centos7 centos:7 /usr/sbin/init
 ~~~
@@ -101,9 +96,6 @@ $ docker exec -it centos7 /bin/bash
 
 $ docker pull jenkins/jenkins:lts 
 
-~~~
-
-~~~
 
 $ docker run -p 8084:8080 -p 50000:50000 --restart=always jenkins
 
@@ -118,9 +110,6 @@ $ docker run -p 8084:8080 -p 50000:50000 --restart=always jenkins
 
 $ docker pull chengxulvtu/dedecms:utf8_full_5.7
 
-~~~
-
-~~~
 
 $ docker run -d -p 8099:80 --restart=always -name dedecms  -v /root/webroot/dedecms:/var/www/html chengxulvtu/dedecms:utf8_full_5.7
 
@@ -136,9 +125,6 @@ $ docker run -d -p 8099:80 --restart=always -name dedecms  -v /root/webroot/dede
 
 $ docker pull mysql:5.6
 
-~~~
-
-~~~
 
 $ docker run -p 3306:3306 --restart=always --name mysql -v /root/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.6
 
@@ -153,10 +139,6 @@ $ docker run -p 3306:3306 --restart=always --name mysql -v /root/mysql:/var/lib/
 
 $ docker pull zookeeper:3.4
 
-~~~
-
-
-~~~
 
 $ docker run -p 2181:2181 --name zookeeper --restart always -d -v /root/zookeeper/:/conf/ zookeeper:3.4
 
@@ -170,9 +152,6 @@ $ docker run -p 2181:2181 --name zookeeper --restart always -d -v /root/zookeepe
 
 $ docker pull redis
 
-~~~
-
-~~~
 
 $ docker run -p 6379:6379 -d --restart=always --name redis redis
 
@@ -185,9 +164,6 @@ $ docker run -p 6379:6379 -d --restart=always --name redis redis
 
 $ docker pull elasticsearch:7.4.2
 
-~~~
-
-~~~
 
 $ docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.4.2
 
