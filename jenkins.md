@@ -74,4 +74,4 @@ systemctl start jenkins
 
 ```
 
-(jenkins执行shell读不到环境变量问题)[https://blog.csdn.net/zzusimon/article/details/57080337]
+[jenkins执行shell读不到环境变量问题](https://blog.csdn.net/zzusimon/article/details/57080337)
