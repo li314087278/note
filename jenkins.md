@@ -63,3 +63,15 @@ JENKINS_ARGS=" --prefix=/jenkins"
 systemctl status jenkins
 systemctl start jenkins
 ~~~
+
+### jenkins 中shell 读取不本机的环境变量问题
+
+在shell 第一行添加
+
+
+```
+#!/bin/bash -ilex
+
+```
+
+(jenkins执行shell读不到环境变量问题)[https://blog.csdn.net/zzusimon/article/details/57080337]
